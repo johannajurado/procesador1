@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "E:/electronica/proyectos y trabajos de la utp/sistemas digitalesIII/programas_xiling/procesador/procesador_aleja/procesador_aleja/PC.xst" -ofn "E:/electronica/proyectos y trabajos de la utp/sistemas digitalesIII/programas_xiling/procesador/procesador_aleja/procesador_aleja/PC.syr" 
+netgen -intstyle ise -ar Structure -tm PC -w -dir netgen/synthesis -ofmt vhdl -sim PC.ngc PC_synthesis.vhd 
