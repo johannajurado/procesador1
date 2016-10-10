@@ -2,15 +2,15 @@
 -- Company: 
 -- Engineer:
 --
--- Create Date:   22:17:49 10/08/2016
+-- Create Date:   13:05:10 10/10/2016
 -- Design Name:   
--- Module Name:   E:/electronica/proyectos y trabajos de la utp/sistemas digitalesIII/programas_xiling/procesador/procesador_aleja/procesador_aleja/simulacionpc_test.vhd
+-- Module Name:   C:/Users/utp.CRIE/Desktop/procesador_aleja/procesador_aleja/registroArchivo_test.vhd
 -- Project Name:  procesador_aleja
 -- Target Device:  
 -- Tool versions:  
 -- Description:   
 -- 
--- VHDL Test Bench Created by ISE for module: PC
+-- VHDL Test Bench Created by ISE for module: registroArchivo_RF
 -- 
 -- Dependencies:
 -- 
@@ -32,66 +32,67 @@ USE ieee.std_logic_1164.ALL;
 -- arithmetic functions with Signed or Unsigned values
 --USE ieee.numeric_std.ALL;
  
-ENTITY simulacionpc_test IS
-END simulacionpc_test;
+ENTITY registroArchivo_test IS
+END registroArchivo_test;
  
-ARCHITECTURE behavior OF simulacionpc_test IS 
+ARCHITECTURE behavior OF registroArchivo_test IS 
  
     -- Component Declaration for the Unit Under Test (UUT)
  
-    COMPONENT PC
+    COMPONENT registroArchivo_RF
     PORT(
-         clk : IN  std_logic;
+         rs1 : IN  std_logic_vector(4 downto 0);
+         rs2 : IN  std_logic_vector(4 downto 0);
          reset : IN  std_logic;
-         actual_PC : IN  std_logic_vector(31 downto 0);
-         salida_PC : OUT  std_logic_vector(31 downto 0)
+         
+         crs1 : OUT  std_logic_vector(31 downto 0);
+         crs2 : OUT  std_logic_vector(31 downto 0);
+         rd : IN  std_logic_vector(4 downto 0)
         );
     END COMPONENT;
     
 
    --Inputs
-   signal clk : std_logic := '0';
+   signal rs1 : std_logic_vector(4 downto 0) := (others => '0');
+   signal rs2 : std_logic_vector(4 downto 0) := (others => '0');
    signal reset : std_logic := '0';
-   signal actual_PC : std_logic_vector(31 downto 0) := (others => '0');
+   signal rd : std_logic_vector(4 downto 0) := (others => '0');
 
  	--Outputs
-   signal salida_PC : std_logic_vector(31 downto 0);
-
-   -- Clock period definitions
-   constant clk_period : time := 10 ns;
+   signal crs1 : std_logic_vector(31 downto 0);
+   signal crs2 : std_logic_vector(31 downto 0);
+   -- No clocks detected in port list. Replace <clock> below with 
+   -- appropriate port name 
+ 
+   
  
 BEGIN
  
 	-- Instantiate the Unit Under Test (UUT)
-   uut: PC PORT MAP (
-          clk => clk,
+   uut: registroArchivo_RF PORT MAP (
+          rs1 => rs1,
+          rs2 => rs2,
           reset => reset,
-          actual_PC => actual_PC,
-          salida_PC => salida_PC
+          crs1 => crs1,
+          crs2 => crs2,
+          rd => rd
         );
 
-   -- Clock process definitions
-   clk_process :process
-   begin
-		clk <= '0';
-		wait for clk_period/2;
-		clk <= '1';
-		wait for clk_period/2;
-   end process;
- 
+   
 
    -- Stimulus process
-     stim_proc: process
+   stim_proc: process
    begin		
-		reset<='1';
+		reset <= '1';
       -- hold reset state for 100 ns.
-      wait for 30 ns;
-		reset<='0';
-		actual_PC <=  x"00000010"; 
-		wait for 30 ns;
-		actual_PC <=  x"00000011";
-		wait for 30 ns;
-		actual_PC <=  x"00000012";
+      wait for 100 ns;
+			reset <='0';
+			rs1 <= "10000";
+			rs2 <= "10001";
+			rd <= "10010";
+			
+	
+      -- insert stimulus here 
 
       wait;
    end process;

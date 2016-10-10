@@ -1,0 +1,2 @@
+vhdl work "registroArchivo_RF.vhd"
+vhdl work "registroArchivo_test.vhd"

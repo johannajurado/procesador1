@@ -45,7 +45,7 @@ ARCHITECTURE behavior OF nPC_test IS
     COMPONENT nPC
     PORT(
          clk : IN  std_logic;
-         Rst : IN  std_logic;
+         reset : IN  std_logic;
          actual : IN  std_logic_vector(31 downto 0);
          salida_nPC : OUT  std_logic_vector(31 downto 0)
         );
@@ -54,7 +54,7 @@ ARCHITECTURE behavior OF nPC_test IS
 
    --Inputs
    signal clk : std_logic := '0';
-   signal Rst : std_logic := '0';
+   signal reset : std_logic := '0';
    signal actual : std_logic_vector(31 downto 0) := (others => '0');
 
  	--Outputs
@@ -68,7 +68,7 @@ BEGIN
 	-- Instantiate the Unit Under Test (UUT)
    uut: nPC PORT MAP (
           clk => clk,
-          Rst => Rst,
+          reset => reset,
           actual => actual,
           salida_nPC => salida_nPC
         );
@@ -86,10 +86,10 @@ BEGIN
    -- Stimulus process
     stim_proc: process
    begin		
-		Rst<='1';
+		reset<='1';
       -- hold reset state for 100 ns.
       wait for 30 ns;
-		Rst<='0';
+		reset<='0';
 		actual <=  x"00000010"; 
 		wait for 30 ns;
 		actual <=  x"00000011";

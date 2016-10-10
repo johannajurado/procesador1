@@ -2,7 +2,7 @@
 -- Company: 
 -- Engineer: 
 -- 
--- Create Date:    20:28:38 10/08/2016 
+-- Create Date:    12:15:57 10/10/2016 
 -- Design Name: 
 -- Module Name:    sumador - Behavioral 
 -- Project Name: 
@@ -19,9 +19,8 @@
 ----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-use IEEE.STD_LOGIC_ARITH.ALL;
-use IEEE.STD_LOGIC_UNSIGNED.All;
-use IEEE.NUMERIC_STD.ALL;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
@@ -33,14 +32,18 @@ use IEEE.NUMERIC_STD.ALL;
 --use UNISIM.VComponents.all;
 
 entity sumador is
-    Port ( entrada : in  STD_LOGIC_VECTOR (7 downto 0);
-           salida : out  STD_LOGIC_VECTOR (7 downto 0));
+    Port ( entrada_sum1 : in  STD_LOGIC_VECTOR (31 downto 0);
+           entrada_sum2 : in  STD_LOGIC_VECTOR (31 downto 0);
+           salida_sumador : out  STD_LOGIC_VECTOR (31 downto 0));
 end sumador;
 
 architecture Behavioral of sumador is
 
 begin
-  salida<=entrada+1;
+	process(entrada_sum1,entrada_sum2)
+	begin
+		salida_sumador <= entrada_sum1+entrada_sum2; 
+	end process; 
 
 end Behavioral;
 

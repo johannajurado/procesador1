@@ -34,7 +34,7 @@ use IEEE.NUMERIC_STD.ALL;
 
 entity PC is
     Port ( clk : in  STD_LOGIC;
-           Rst : in  STD_LOGIC;
+           reset : in  STD_LOGIC;
            actual_PC : in  STD_LOGIC_VECTOR (31 downto 0);
            salida_PC : out  STD_LOGIC_VECTOR (31 downto 0));
 end PC;
@@ -42,10 +42,10 @@ end PC;
 architecture Behavioral of PC is
 
 begin
-   process (clk,Rst,actual_PC)
+   process (clk,reset,actual_PC)
 	begin
 	if(rising_edge(clk))then
-			if Rst='1' then
+			if reset='1' then
 			salida_PC<=x"00000000";
 		else
 		salida_PC <=actual_PC;		

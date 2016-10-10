@@ -15,16 +15,6 @@
   <version xil_pn:ise_version="14.7" xil_pn:schema_version="2"/>
 
   <files>
-    <file xil_pn:name="sumador.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
-    </file>
-    <file xil_pn:name="sumador2_tb.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
-      <association xil_pn:name="PostMapSimulation" xil_pn:seqID="59"/>
-      <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="59"/>
-      <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="59"/>
-    </file>
     <file xil_pn:name="nPC.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
@@ -44,6 +34,56 @@
       <association xil_pn:name="PostMapSimulation" xil_pn:seqID="93"/>
       <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="93"/>
       <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="93"/>
+    </file>
+    <file xil_pn:name="sumador.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+    </file>
+    <file xil_pn:name="sumador_test.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
+      <association xil_pn:name="PostMapSimulation" xil_pn:seqID="98"/>
+      <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="98"/>
+      <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="98"/>
+    </file>
+    <file xil_pn:name="memoriaInstrucciones.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+    </file>
+    <file xil_pn:name="memInstrucciones_test.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
+      <association xil_pn:name="PostMapSimulation" xil_pn:seqID="112"/>
+      <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="112"/>
+      <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="112"/>
+    </file>
+    <file xil_pn:name="registroArchivo_RF.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+    </file>
+    <file xil_pn:name="registroArchivo_test.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
+      <association xil_pn:name="PostMapSimulation" xil_pn:seqID="111"/>
+      <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="111"/>
+      <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="111"/>
+    </file>
+    <file xil_pn:name="unidadControl.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+    </file>
+    <file xil_pn:name="unidadControl_test.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
+      <association xil_pn:name="PostMapSimulation" xil_pn:seqID="120"/>
+      <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="120"/>
+      <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="120"/>
+    </file>
+    <file xil_pn:name="Alu.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+    </file>
+    <file xil_pn:name="Alu_test.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
+      <association xil_pn:name="PostMapSimulation" xil_pn:seqID="125"/>
+      <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="125"/>
+      <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="125"/>
     </file>
   </files>
 
@@ -233,6 +273,7 @@
     <property xil_pn:name="Priority Encoder Extraction" xil_pn:value="Yes" xil_pn:valueState="default"/>
     <property xil_pn:name="Produce Verbose Report" xil_pn:value="false" xil_pn:valueState="default"/>
     <property xil_pn:name="Project Description" xil_pn:value="" xil_pn:valueState="default"/>
+    <property xil_pn:name="Project Generator" xil_pn:value="ProjNav" xil_pn:valueState="default"/>
     <property xil_pn:name="Property Specification in Project File" xil_pn:value="Store all values" xil_pn:valueState="default"/>
     <property xil_pn:name="RAM Extraction" xil_pn:value="true" xil_pn:valueState="default"/>
     <property xil_pn:name="RAM Style" xil_pn:value="Auto" xil_pn:valueState="default"/>
