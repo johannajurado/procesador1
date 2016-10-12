@@ -31,13 +31,30 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity procesadorfinal is
     Port ( clk : in  STD_LOGIC;
-           reset : in  STD_LOGIC);
+           reset : in  STD_LOGIC
+			  resultadoProcesador : out  STD_LOGIC_VECTOR (31 downto 0));
+			  
 end procesadorfinal;
 
 architecture Behavioral of procesadorfinal is
 
+COMPONENT sumador
+	PORT(
+		entrada_sum1 : IN std_logic_vector(31 downto 0);
+		entrada_sum2 : IN std_logic_vector(31 downto 0);          
+		salida_sumador : OUT std_logic_vector(31 downto 0)
+		);
+	END COMPONENT;
+
+signal sumadorToNPC:STD_LOGIC_VECTOR (31 downto 0);
+
 begin
 
+	Inst_sumador: sumador PORT MAP(
+		entrada_sum1 =>x"00000001" ,
+		entrada_sum2 => ,
+		salida_sumador => 
+	);
 
 end Behavioral;
 
