@@ -45,6 +45,7 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="PC.twr" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="PC.twx" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="PC.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_VHDL_INSTTEMPLATE" xil_pn:name="PC.vhi"/>
     <file xil_pn:fileType="FILE_XPI" xil_pn:name="PC.xpi"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="PC.xst"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="PC_envsettings.html"/>
@@ -85,6 +86,7 @@
     <file xil_pn:fileType="FILE_SPL" xil_pn:name="nPC.spl"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="nPC.stx"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="nPC.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_VHDL_INSTTEMPLATE" xil_pn:name="nPC.vhi"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="nPC.xst"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="nPC_test_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="nPC_test_isim_beh.exe"/>
@@ -173,22 +175,11 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="InputAdded"/>
       <status xil_pn:value="InputChanged"/>
-      <outfile xil_pn:name="Alu.vhd"/>
-      <outfile xil_pn:name="Alu_test.vhd"/>
-      <outfile xil_pn:name="memInstrucciones_test.vhd"/>
-      <outfile xil_pn:name="memoriaInstrucciones.vhd"/>
-      <outfile xil_pn:name="nPC.vhd"/>
-      <outfile xil_pn:name="nPC_test.vhd"/>
-      <outfile xil_pn:name="pc.vhd"/>
-      <outfile xil_pn:name="registroArchivo_RF.vhd"/>
-      <outfile xil_pn:name="registroArchivo_test.vhd"/>
-      <outfile xil_pn:name="simulacionpc_test.vhd"/>
-      <outfile xil_pn:name="sumador.vhd"/>
-      <outfile xil_pn:name="sumador_test.vhd"/>
-      <outfile xil_pn:name="unidadControl.vhd"/>
-      <outfile xil_pn:name="unidadControl_test.vhd"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1476230617" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="897161811491552669" xil_pn:start_ts="1476230617">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -208,48 +199,33 @@
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="InputChanged"/>
-      <outfile xil_pn:name="Alu.vhd"/>
-      <outfile xil_pn:name="Alu_test.vhd"/>
-      <outfile xil_pn:name="memInstrucciones_test.vhd"/>
-      <outfile xil_pn:name="memoriaInstrucciones.vhd"/>
-      <outfile xil_pn:name="nPC.vhd"/>
-      <outfile xil_pn:name="nPC_test.vhd"/>
-      <outfile xil_pn:name="pc.vhd"/>
-      <outfile xil_pn:name="registroArchivo_RF.vhd"/>
-      <outfile xil_pn:name="registroArchivo_test.vhd"/>
-      <outfile xil_pn:name="simulacionpc_test.vhd"/>
-      <outfile xil_pn:name="sumador.vhd"/>
-      <outfile xil_pn:name="sumador_test.vhd"/>
-      <outfile xil_pn:name="unidadControl.vhd"/>
-      <outfile xil_pn:name="unidadControl_test.vhd"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1476230971" xil_pn:in_ck="-627864865581542653" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-139526064778373412" xil_pn:start_ts="1476230963">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="NotReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputChanged"/>
+      <status xil_pn:value="OutputRemoved"/>
+    </transform>
+    <transform xil_pn:end_ts="1476230971" xil_pn:in_ck="4354309552857831630" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-1306926036673734871" xil_pn:start_ts="1476230971">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForProperties"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="fuse.log"/>
-      <outfile xil_pn:name="isim"/>
-      <outfile xil_pn:name="isim.log"/>
-      <outfile xil_pn:name="memInstrucciones_test_beh.prj"/>
-      <outfile xil_pn:name="memInstrucciones_test_isim_beh.exe"/>
-      <outfile xil_pn:name="xilinxsim.ini"/>
-    </transform>
-    <transform xil_pn:end_ts="1476230971" xil_pn:in_ck="4354309552857831630" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-1306926036673734871" xil_pn:start_ts="1476230971">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForProperties"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="isim.cmd"/>
-      <outfile xil_pn:name="isim.log"/>
-      <outfile xil_pn:name="memInstrucciones_test_isim_beh.wdb"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1475976739" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1475976739">
       <status xil_pn:value="SuccessfullyRun"/>

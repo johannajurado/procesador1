@@ -32,7 +32,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 entity procesadorfinal is
     Port ( clk : in  STD_LOGIC;
            reset : in  STD_LOGIC
-			  resultadoProcesador : out  STD_LOGIC_VECTOR (31 downto 0));
+			  resultado_Procesador : out  STD_LOGIC_VECTOR (31 downto 0));
 			  
 end procesadorfinal;
 
@@ -46,15 +46,17 @@ COMPONENT sumador
 		);
 	END COMPONENT;
 
-signal sumadorToNPC:STD_LOGIC_VECTOR (31 downto 0);
+signal sumadorToNPC,npcToPC:STD_LOGIC_VECTOR (31 downto 0);
 
 begin
 
 	Inst_sumador: sumador PORT MAP(
 		entrada_sum1 =>x"00000001" ,
-		entrada_sum2 => ,
-		salida_sumador => 
+		entrada_sum2 =>npcToPC,
+		salida_sumador =>sumadorToNPC 
 	);
 
 end Behavioral;
+
+
 
