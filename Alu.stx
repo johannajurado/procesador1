@@ -1,35 +1,35 @@
 Release 14.7 - xst P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
---> Parameter TMPDIR set to C:/Users/utp.CRIE/Desktop/procesador_aleja/procesador_aleja/xst/projnav.tmp
+--> Parameter TMPDIR set to H:/procesador_aleja/procesador_aleja/xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total CPU time to Xst completion: 0.19 secs
  
---> Parameter xsthdpdir set to C:/Users/utp.CRIE/Desktop/procesador_aleja/procesador_aleja/xst
+--> Parameter xsthdpdir set to H:/procesador_aleja/procesador_aleja/xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total CPU time to Xst completion: 0.19 secs
  
 --> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
 
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-Compiling vhdl file "C:/Users/utp.CRIE/Desktop/procesador_aleja/procesador_aleja/Alu.vhd" in Library work.
-ERROR:HDLParsers:808 - "C:/Users/utp.CRIE/Desktop/procesador_aleja/procesador_aleja/Alu.vhd" Line 46. + can not have such operands in this context.
-ERROR:HDLParsers:808 - "C:/Users/utp.CRIE/Desktop/procesador_aleja/procesador_aleja/Alu.vhd" Line 48. - can not have such operands in this context.
+Compiling vhdl file "H:/procesador_aleja/procesador_aleja/Alu.vhd" in Library work.
+Entity <alu> compiled.
+Entity <Alu> (Architecture <Behavioral>) compiled.
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.10 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.49 secs
  
 --> 
 
-Total memory usage is 212908 kilobytes
+Total memory usage is 213892 kilobytes
 
-Number of errors   :    2 (   0 filtered)
+Number of errors   :    0 (   0 filtered)
 Number of warnings :    1 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 

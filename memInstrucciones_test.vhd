@@ -75,7 +75,7 @@ BEGIN
       -- hold reset state for 100 ns.
       wait for 100 ns;	
 		reset <='0';
-		direccion <= x"00000001";
+		direccion <= x"0000000F";
 
       --wait for <clock>_period*10;
 

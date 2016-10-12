@@ -27,6 +27,9 @@
 --------------------------------------------------------------------------------
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.All;
+use IEEE.NUMERIC_STD.ALL;
  
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
@@ -78,7 +81,7 @@ BEGIN
    begin	
 		entrada_suma1 <= x"00000004";
 		entrada_sum2 <= x"00000002";
-		alu_op <= "000000";
+		alu_op <= "000001";
      
 
 

@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.07 secs
+Total CPU time to Xst completion: 0.21 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total CPU time to Xst completion: 0.21 secs
  
 --> Reading design: PC.prj
 
@@ -104,7 +104,9 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-Compiling vhdl file "C:/Users/utp.CRIE/Desktop/procesador_aleja/procesador_aleja/pc.vhd" in Library work.
+WARNING:HDLParsers:3607 - Unit work/PC is now defined in a different file.  It was defined in "C:/Users/utp.CRIE/Desktop/procesador_aleja/procesador_aleja/pc.vhd", and is now defined in "H:/procesador_aleja/procesador_aleja/pc.vhd".
+WARNING:HDLParsers:3607 - Unit work/PC/Behavioral is now defined in a different file.  It was defined in "C:/Users/utp.CRIE/Desktop/procesador_aleja/procesador_aleja/pc.vhd", and is now defined in "H:/procesador_aleja/procesador_aleja/pc.vhd".
+Compiling vhdl file "H:/procesador_aleja/procesador_aleja/pc.vhd" in Library work.
 Architecture behavioral of Entity pc is up to date.
 
 =========================================================================
@@ -127,7 +129,7 @@ Entity <PC> analyzed. Unit <PC> generated.
 Performing bidirectional port resolution...
 
 Synthesizing Unit <PC>.
-    Related source file is "C:/Users/utp.CRIE/Desktop/procesador_aleja/procesador_aleja/pc.vhd".
+    Related source file is "H:/procesador_aleja/procesador_aleja/pc.vhd".
     Found 32-bit register for signal <salida_PC>.
     Summary:
 	inferred  32 D-type flip-flop(s).
@@ -269,15 +271,15 @@ Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
   Total number of paths / destination ports: 64 / 64
 -------------------------------------------------------------------------
 Offset:              2.974ns (Levels of Logic = 1)
-  Source:            Rst (PAD)
+  Source:            reset (PAD)
   Destination:       salida_PC_0 (FF)
   Destination Clock: clk rising
 
-  Data Path: Rst to salida_PC_0
+  Data Path: reset to salida_PC_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            32   1.106   1.073  Rst_IBUF (Rst_IBUF)
+     IBUF:I->O            32   1.106   1.073  reset_IBUF (reset_IBUF)
      FDR:R                     0.795          salida_PC_0
     ----------------------------------------
     Total                      2.974ns (1.901ns logic, 1.073ns route)
@@ -305,14 +307,14 @@ Offset:              4.040ns (Levels of Logic = 1)
 =========================================================================
 
 
-Total REAL time to Xst completion: 4.00 secs
-Total CPU time to Xst completion: 4.53 secs
+Total REAL time to Xst completion: 10.00 secs
+Total CPU time to Xst completion: 10.24 secs
  
 --> 
 
-Total memory usage is 256892 kilobytes
+Total memory usage is 259024 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    0 (   0 filtered)
+Number of warnings :    2 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 

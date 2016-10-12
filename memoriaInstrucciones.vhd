@@ -34,7 +34,7 @@ use std.textio.all;
 entity memoriaInstrucciones is
     Port ( direccion : in  STD_LOGIC_VECTOR (31 downto 0);
            instruccion : out  STD_LOGIC_VECTOR (31 downto 0);
-           reset : in  STD_LOGIC_VECTOR (0 downto 0));
+           reset : in  STD_LOGIC );
 end memoriaInstrucciones;
 
 architecture Behavioral of memoriaInstrucciones is

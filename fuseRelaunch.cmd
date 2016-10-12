@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -o "C:/Users/utp.CRIE/Desktop/procesador_aleja/procesador_aleja/registroArchivo_test_isim_beh.exe" -prj "C:/Users/utp.CRIE/Desktop/procesador_aleja/procesador_aleja/registroArchivo_test_beh.prj" "work.registroArchivo_test" 
+-intstyle "ise" -incremental -o "H:/procesador_aleja/procesador_aleja/memInstrucciones_test_isim_beh.exe" -prj "H:/procesador_aleja/procesador_aleja/memInstrucciones_test_beh.prj" "work.memInstrucciones_test" 
