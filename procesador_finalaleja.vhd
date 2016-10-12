@@ -71,8 +71,28 @@ COMPONENT sumador
 		instruccion : OUT std_logic_vector(31 downto 0)
 		);
 	END COMPONENT;
+	
+		COMPONENT unidadControl
+	PORT(
+		op : IN std_logic;
+		op3 : IN std_logic_vector(5 downto 0);          
+		salida_UC : OUT std_logic_vector(5 downto 0)
+		);
+	END COMPONENT;
+	
+		COMPONENT registroArchivo_RF
+	PORT(
+		rs1 : IN std_logic_vector(4 downto 0);
+		rs2 : IN std_logic_vector(4 downto 0);
+		reset : IN std_logic;
+		rd : IN std_logic_vector(4 downto 0);          
+		crs1 : OUT std_logic_vector(31 downto 0);
+		crs2 : OUT std_logic_vector(31 downto 0)
+		);
+	END COMPONENT;
 
-signal sumadorToNPC,npcToPC,pcToIM,imToUR: STD_LOGIC_VECTOR (31 downto 0);
+signal sumadorToNPC,npcToPC,pcToIM,imToUR,rfToalup1: STD_LOGIC_VECTOR (31 downto 0);--creo senales de 32
+signal alup_op1: STD_LOGIC_VECTOR (5 downto 0);--creo senales de 6
 
 begin
 
@@ -98,11 +118,27 @@ begin
 		salida_PC =>pcToIM 
 	);
 
-	Inst_memoriaInstrucciones: memoriaInstrucciones PORT MAP(
+	Inst_memoriaInstrucciones: memoriaInstrucciones PORT MAP( --la memoria se divide entre la unidad de control y RF
 		direccion =>pcToIM ,
 		instruccion =>imToUR  ,
 		reset =>reset 
 	);
+
+Inst_unidadControl: unidadControl PORT MAP(
+		op =>imToUR(31 downto 30) , ---indica que tipo de formato estoy utilizando
+		op3 =>imToUR(24 downto 19)  ,
+		salida_UC =>alup_op1
+	);
+	
+	Inst_registroArchivo_RF: registroArchivo_RF PORT MAP(
+		rs1 =>imToUR(18 downto 14) ,
+		rs2 =>imToUR(4 downto 0) ,
+		reset => reset,
+		crs1 =>rfToalup1 ,
+		crs2 =>rfToalup1 ,
+		rd => imToUR(29 downto 25)
+	);
+
 
 end arq_procesador;
 

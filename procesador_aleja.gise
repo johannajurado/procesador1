@@ -81,6 +81,7 @@
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="memInstrucciones_test_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="memoriaInstrucciones.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="memoriaInstrucciones.stx"/>
+    <file xil_pn:fileType="FILE_VHDL_INSTTEMPLATE" xil_pn:name="memoriaInstrucciones.vhi"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="memoriaInstrucciones.xst"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="nPC.prj"/>
     <file xil_pn:fileType="FILE_SPL" xil_pn:name="nPC.spl"/>
@@ -99,6 +100,7 @@
     <file xil_pn:fileType="FILE_VHDL" xil_pn:name="netgen/synthesis/sumador_synthesis.vhd"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="registroArchivo_RF.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="registroArchivo_RF.stx"/>
+    <file xil_pn:fileType="FILE_VHDL_INSTTEMPLATE" xil_pn:name="registroArchivo_RF.vhi"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="registroArchivo_RF.xst"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="registroArchivo_test_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="registroArchivo_test_isim_beh.wdb"/>
