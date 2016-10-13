@@ -90,8 +90,17 @@ COMPONENT sumador
 		crs2 : OUT std_logic_vector(31 downto 0)
 		);
 	END COMPONENT;
+	
+	COMPONENT Alu
+	PORT(
+		entrada_suma1 : IN std_logic_vector(31 downto 0);
+		entrada_sum2 : IN std_logic_vector(31 downto 0);
+		alu_op : IN std_logic_vector(5 downto 0);          
+		salida_ALU : OUT std_logic_vector(31 downto 0)
+		);
+	END COMPONENT;
 
-signal sumadorToNPC,npcToPC,pcToIM,imToUR,rfToalup1: STD_LOGIC_VECTOR (31 downto 0);--creo senales de 32
+signal sumadorToNPC,npcToPC,pcToIM,imToUR,aluResult,rfToalup1,rfToalup2: STD_LOGIC_VECTOR (31 downto 0);--creo senales de 32
 signal alup_op1: STD_LOGIC_VECTOR (5 downto 0);--creo senales de 6
 
 begin
@@ -135,10 +144,19 @@ Inst_unidadControl: unidadControl PORT MAP(
 		rs2 =>imToUR(4 downto 0) ,
 		reset => reset,
 		crs1 =>rfToalup1 ,
-		crs2 =>rfToalup1 ,
+		crs2 =>rfToalup2 ,
 		rd => imToUR(29 downto 25)
 	);
+	
+	
+	Inst_Alu: Alu PORT MAP(
+		entrada_suma1 =>rfToalup1 ,
+		entrada_sum2 =>rfToalup2 ,
+		alu_op =>alup_op1 ,
+		salida_ALU =>aluResult 
+	);
 
+resultadoProcesador<=aluResult;
 
 end arq_procesador;
 

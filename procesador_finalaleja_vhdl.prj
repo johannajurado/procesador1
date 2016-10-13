@@ -1,0 +1,8 @@
+vhdl work "C:\Users\Administrador\Desktop\procesador_aleja\procesador_aleja\unidadControl.vhd"
+vhdl work "C:\Users\Administrador\Desktop\procesador_aleja\procesador_aleja\sumador.vhd"
+vhdl work "C:\Users\Administrador\Desktop\procesador_aleja\procesador_aleja\registroArchivo_RF.vhd"
+vhdl work "C:\Users\Administrador\Desktop\procesador_aleja\procesador_aleja\pc.vhd"
+vhdl work "C:\Users\Administrador\Desktop\procesador_aleja\procesador_aleja\nPC.vhd"
+vhdl work "C:\Users\Administrador\Desktop\procesador_aleja\procesador_aleja\memoriaInstrucciones.vhd"
+vhdl work "C:\Users\Administrador\Desktop\procesador_aleja\procesador_aleja\Alu.vhd"
+vhdl work "C:\Users\Administrador\Desktop\procesador_aleja\procesador_aleja\procesador_finalaleja.vhd"

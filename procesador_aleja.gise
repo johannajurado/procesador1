@@ -25,6 +25,7 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name=".lso"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Alu.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="Alu.stx"/>
+    <file xil_pn:fileType="FILE_VHDL_INSTTEMPLATE" xil_pn:name="Alu.vhi"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="Alu.xst"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Alu_test_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Alu_test_stx_beh.prj"/>

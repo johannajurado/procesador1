@@ -1,0 +1,56 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:/Users/Administrador/Desktop/procesador_aleja/procesador_aleja/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.25 secs
+ 
+--> Parameter xsthdpdir set to C:/Users/Administrador/Desktop/procesador_aleja/procesador_aleja/xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.26 secs
+ 
+--> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+WARNING:HDLParsers:3607 - Unit work/Alu is now defined in a different file.  It was defined in "H:/procesador_aleja/procesador_aleja/Alu.vhd", and is now defined in "C:/Users/Administrador/Desktop/procesador_aleja/procesador_aleja/Alu.vhd".
+WARNING:HDLParsers:3607 - Unit work/Alu/Behavioral is now defined in a different file.  It was defined in "H:/procesador_aleja/procesador_aleja/Alu.vhd", and is now defined in "C:/Users/Administrador/Desktop/procesador_aleja/procesador_aleja/Alu.vhd".
+WARNING:HDLParsers:3607 - Unit work/memoriaInstrucciones is now defined in a different file.  It was defined in "H:/procesador_aleja/procesador_aleja/memoriaInstrucciones.vhd", and is now defined in "C:/Users/Administrador/Desktop/procesador_aleja/procesador_aleja/memoriaInstrucciones.vhd".
+WARNING:HDLParsers:3607 - Unit work/memoriaInstrucciones/Behavioral is now defined in a different file.  It was defined in "H:/procesador_aleja/procesador_aleja/memoriaInstrucciones.vhd", and is now defined in "C:/Users/Administrador/Desktop/procesador_aleja/procesador_aleja/memoriaInstrucciones.vhd".
+WARNING:HDLParsers:3607 - Unit work/nPC is now defined in a different file.  It was defined in "C:/Users/utp.CRIE/Desktop/procesador_aleja/procesador_aleja/nPC.vhd", and is now defined in "C:/Users/Administrador/Desktop/procesador_aleja/procesador_aleja/nPC.vhd".
+WARNING:HDLParsers:3607 - Unit work/nPC/Behavioral is now defined in a different file.  It was defined in "C:/Users/utp.CRIE/Desktop/procesador_aleja/procesador_aleja/nPC.vhd", and is now defined in "C:/Users/Administrador/Desktop/procesador_aleja/procesador_aleja/nPC.vhd".
+WARNING:HDLParsers:3607 - Unit work/PC is now defined in a different file.  It was defined in "H:/procesador_aleja/procesador_aleja/pc.vhd", and is now defined in "C:/Users/Administrador/Desktop/procesador_aleja/procesador_aleja/pc.vhd".
+WARNING:HDLParsers:3607 - Unit work/PC/Behavioral is now defined in a different file.  It was defined in "H:/procesador_aleja/procesador_aleja/pc.vhd", and is now defined in "C:/Users/Administrador/Desktop/procesador_aleja/procesador_aleja/pc.vhd".
+WARNING:HDLParsers:3607 - Unit work/registroArchivo_RF is now defined in a different file.  It was defined in "C:/Users/utp.CRIE/Desktop/procesador_aleja/procesador_aleja/registroArchivo_RF.vhd", and is now defined in "C:/Users/Administrador/Desktop/procesador_aleja/procesador_aleja/registroArchivo_RF.vhd".
+WARNING:HDLParsers:3607 - Unit work/registroArchivo_RF/Behavioral is now defined in a different file.  It was defined in "C:/Users/utp.CRIE/Desktop/procesador_aleja/procesador_aleja/registroArchivo_RF.vhd", and is now defined in "C:/Users/Administrador/Desktop/procesador_aleja/procesador_aleja/registroArchivo_RF.vhd".
+WARNING:HDLParsers:3607 - Unit work/sumador is now defined in a different file.  It was defined in "C:/Users/utp.CRIE/Desktop/procesador_aleja/procesador_aleja/sumador.vhd", and is now defined in "C:/Users/Administrador/Desktop/procesador_aleja/procesador_aleja/sumador.vhd".
+WARNING:HDLParsers:3607 - Unit work/sumador/Behavioral is now defined in a different file.  It was defined in "C:/Users/utp.CRIE/Desktop/procesador_aleja/procesador_aleja/sumador.vhd", and is now defined in "C:/Users/Administrador/Desktop/procesador_aleja/procesador_aleja/sumador.vhd".
+WARNING:HDLParsers:3607 - Unit work/unidadControl is now defined in a different file.  It was defined in "C:/Users/utp.CRIE/Desktop/procesador_aleja/procesador_aleja/unidadControl.vhd", and is now defined in "C:/Users/Administrador/Desktop/procesador_aleja/procesador_aleja/unidadControl.vhd".
+WARNING:HDLParsers:3607 - Unit work/unidadControl/Behavioral is now defined in a different file.  It was defined in "C:/Users/utp.CRIE/Desktop/procesador_aleja/procesador_aleja/unidadControl.vhd", and is now defined in "C:/Users/Administrador/Desktop/procesador_aleja/procesador_aleja/unidadControl.vhd".
+Compiling vhdl file "C:/Users/Administrador/Desktop/procesador_aleja/procesador_aleja/sumador.vhd" in Library work.
+Architecture behavioral of Entity sumador is up to date.
+Compiling vhdl file "C:/Users/Administrador/Desktop/procesador_aleja/procesador_aleja/nPC.vhd" in Library work.
+Architecture behavioral of Entity npc is up to date.
+Compiling vhdl file "C:/Users/Administrador/Desktop/procesador_aleja/procesador_aleja/pc.vhd" in Library work.
+Architecture behavioral of Entity pc is up to date.
+Compiling vhdl file "C:/Users/Administrador/Desktop/procesador_aleja/procesador_aleja/memoriaInstrucciones.vhd" in Library work.
+Architecture behavioral of Entity memoriainstrucciones is up to date.
+Compiling vhdl file "C:/Users/Administrador/Desktop/procesador_aleja/procesador_aleja/unidadControl.vhd" in Library work.
+ERROR:HDLParsers:808 - "C:/Users/Administrador/Desktop/procesador_aleja/procesador_aleja/unidadControl.vhd" Line 44. = can not have such operands in this context.
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.59 secs
+ 
+--> 
+
+Total memory usage is 214276 kilobytes
+
+Number of errors   :    1 (   0 filtered)
+Number of warnings :   15 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
