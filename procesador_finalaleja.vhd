@@ -19,6 +19,8 @@
 ----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
@@ -36,7 +38,6 @@ entity procesador_finalaleja is
 end procesador_finalaleja;
 
 architecture arq_procesador of procesador_finalaleja is
-
 
 COMPONENT sumador
 	PORT(
@@ -74,7 +75,7 @@ COMPONENT sumador
 	
 		COMPONENT unidadControl
 	PORT(
-		op : IN std_logic;
+		op : IN STD_LOGIC_VECTOR(1 downto 0);
 		op3 : IN std_logic_vector(5 downto 0);          
 		salida_UC : OUT std_logic_vector(5 downto 0)
 		);

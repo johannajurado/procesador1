@@ -99,6 +99,17 @@
     <file xil_pn:fileType="FILE_VHDL" xil_pn:name="netgen/synthesis/PC_synthesis.vhd"/>
     <file xil_pn:fileType="FILE_NETGEN_REPORT" xil_pn:name="netgen/synthesis/sumador_synthesis.nlf"/>
     <file xil_pn:fileType="FILE_VHDL" xil_pn:name="netgen/synthesis/sumador_synthesis.vhd"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="procesador_finalaleja.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="procesador_finalaleja.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="procesador_finalaleja.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="procesador_finalaleja.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="procesador_finalaleja.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="procesador_finalaleja.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="procesador_finalaleja.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="procesador_finalaleja.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="procesador_finalaleja_summary.html"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="procesador_finalaleja_vhdl.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="procesador_finalaleja_xst.xrpt"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="registroArchivo_RF.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="registroArchivo_RF.stx"/>
     <file xil_pn:fileType="FILE_VHDL_INSTTEMPLATE" xil_pn:name="registroArchivo_RF.vhi"/>
@@ -234,11 +245,54 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
+    <transform xil_pn:end_ts="1476318805" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="2665356465734166165" xil_pn:start_ts="1476318805">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1476318805" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-2202369714034815556" xil_pn:start_ts="1476318805">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1476318805" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1476318805">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1476318805" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="7192320429002499987" xil_pn:start_ts="1476318805">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1476318805" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="-3893270297158069842" xil_pn:start_ts="1476318805">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1476318805" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="5896052350945761670" xil_pn:start_ts="1476318805">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1476318828" xil_pn:in_ck="8642547903550706436" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="2426730275623512569" xil_pn:start_ts="1476318805">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name=".lso"/>
+      <outfile xil_pn:name="PC.ngr"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="procesador_finalaleja.lso"/>
+      <outfile xil_pn:name="procesador_finalaleja.ngc"/>
+      <outfile xil_pn:name="procesador_finalaleja.ngr"/>
+      <outfile xil_pn:name="procesador_finalaleja.prj"/>
+      <outfile xil_pn:name="procesador_finalaleja.stx"/>
+      <outfile xil_pn:name="procesador_finalaleja.syr"/>
+      <outfile xil_pn:name="procesador_finalaleja.xst"/>
+      <outfile xil_pn:name="procesador_finalaleja_vhdl.prj"/>
+      <outfile xil_pn:name="procesador_finalaleja_xst.xrpt"/>
+      <outfile xil_pn:name="sumador.ngr"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
     <transform xil_pn:end_ts="1475982992" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="1675820603104756107" xil_pn:start_ts="1475982992">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForProperties"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
     </transform>
   </transforms>
 

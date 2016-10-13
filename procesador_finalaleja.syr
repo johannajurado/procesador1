@@ -1,0 +1,645 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.25 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.25 secs
+ 
+--> Reading design: procesador_finalaleja.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "procesador_finalaleja.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "procesador_finalaleja"
+Output Format                      : NGC
+Target Device                      : xc3s500e-5-fg320
+
+---- Source Options
+Top Module Name                    : procesador_finalaleja
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/Administrador/Desktop/procesador_aleja/procesador_aleja/sumador.vhd" in Library work.
+Architecture behavioral of Entity sumador is up to date.
+Compiling vhdl file "C:/Users/Administrador/Desktop/procesador_aleja/procesador_aleja/nPC.vhd" in Library work.
+Architecture behavioral of Entity npc is up to date.
+Compiling vhdl file "C:/Users/Administrador/Desktop/procesador_aleja/procesador_aleja/pc.vhd" in Library work.
+Architecture behavioral of Entity pc is up to date.
+Compiling vhdl file "C:/Users/Administrador/Desktop/procesador_aleja/procesador_aleja/memoriaInstrucciones.vhd" in Library work.
+Architecture behavioral of Entity memoriainstrucciones is up to date.
+Compiling vhdl file "C:/Users/Administrador/Desktop/procesador_aleja/procesador_aleja/unidadControl.vhd" in Library work.
+Architecture behavioral of Entity unidadcontrol is up to date.
+Compiling vhdl file "C:/Users/Administrador/Desktop/procesador_aleja/procesador_aleja/registroArchivo_RF.vhd" in Library work.
+Architecture behavioral of Entity registroarchivo_rf is up to date.
+Compiling vhdl file "C:/Users/Administrador/Desktop/procesador_aleja/procesador_aleja/Alu.vhd" in Library work.
+Architecture behavioral of Entity alu is up to date.
+Compiling vhdl file "C:/Users/Administrador/Desktop/procesador_aleja/procesador_aleja/procesador_finalaleja.vhd" in Library work.
+Architecture arq_procesador of Entity procesador_finalaleja is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <procesador_finalaleja> in library <work> (architecture <arq_procesador>).
+
+Analyzing hierarchy for entity <sumador> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <nPC> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <PC> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <memoriaInstrucciones> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <unidadControl> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <registroArchivo_RF> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Alu> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <procesador_finalaleja> in library <work> (Architecture <arq_procesador>).
+Entity <procesador_finalaleja> analyzed. Unit <procesador_finalaleja> generated.
+
+Analyzing Entity <sumador> in library <work> (Architecture <behavioral>).
+Entity <sumador> analyzed. Unit <sumador> generated.
+
+Analyzing Entity <nPC> in library <work> (Architecture <behavioral>).
+Entity <nPC> analyzed. Unit <nPC> generated.
+
+Analyzing Entity <PC> in library <work> (Architecture <behavioral>).
+Entity <PC> analyzed. Unit <PC> generated.
+
+Analyzing Entity <memoriaInstrucciones> in library <work> (Architecture <behavioral>).
+WARNING:Xst:790 - "C:/Users/Administrador/Desktop/procesador_aleja/procesador_aleja/memoriaInstrucciones.vhd" line 67: Index value(s) does not match array range, simulation mismatch.
+INFO:Xst:1433 - Contents of array <instructions> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+Entity <memoriaInstrucciones> analyzed. Unit <memoriaInstrucciones> generated.
+
+Analyzing Entity <unidadControl> in library <work> (Architecture <behavioral>).
+Entity <unidadControl> analyzed. Unit <unidadControl> generated.
+
+Analyzing Entity <registroArchivo_RF> in library <work> (Architecture <behavioral>).
+WARNING:Xst:790 - "C:/Users/Administrador/Desktop/procesador_aleja/procesador_aleja/registroArchivo_RF.vhd" line 57: Index value(s) does not match array range, simulation mismatch.
+INFO:Xst:1607 - Contents of array <reg> may be accessed with an index that does not cover the full array size.
+WARNING:Xst:790 - "C:/Users/Administrador/Desktop/procesador_aleja/procesador_aleja/registroArchivo_RF.vhd" line 58: Index value(s) does not match array range, simulation mismatch.
+INFO:Xst:1607 - Contents of array <reg> may be accessed with an index that does not cover the full array size.
+WARNING:Xst:819 - "C:/Users/Administrador/Desktop/procesador_aleja/procesador_aleja/registroArchivo_RF.vhd" line 49: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <reg>
+INFO:Xst:2679 - Register <reg<0>> in unit <registroArchivo_RF> has a constant value of 00000000000000000000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <reg<1>> in unit <registroArchivo_RF> has a constant value of 00000000000000000000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <reg<2>> in unit <registroArchivo_RF> has a constant value of 00000000000000000000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <reg<3>> in unit <registroArchivo_RF> has a constant value of 00000000000000000000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <reg<4>> in unit <registroArchivo_RF> has a constant value of 00000000000000000000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <reg<5>> in unit <registroArchivo_RF> has a constant value of 00000000000000000000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <reg<6>> in unit <registroArchivo_RF> has a constant value of 00000000000000000000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <reg<7>> in unit <registroArchivo_RF> has a constant value of 00000000000000000000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <reg<8>> in unit <registroArchivo_RF> has a constant value of 00000000000000000000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <reg<9>> in unit <registroArchivo_RF> has a constant value of 00000000000000000000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <reg<10>> in unit <registroArchivo_RF> has a constant value of 00000000000000000000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <reg<11>> in unit <registroArchivo_RF> has a constant value of 00000000000000000000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <reg<12>> in unit <registroArchivo_RF> has a constant value of 00000000000000000000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <reg<13>> in unit <registroArchivo_RF> has a constant value of 00000000000000000000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <reg<14>> in unit <registroArchivo_RF> has a constant value of 00000000000000000000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <reg<15>> in unit <registroArchivo_RF> has a constant value of 00000000000000000000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <reg<16>> in unit <registroArchivo_RF> has a constant value of 00000000000000000000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <reg<17>> in unit <registroArchivo_RF> has a constant value of 00000000000000000000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <reg<18>> in unit <registroArchivo_RF> has a constant value of 00000000000000000000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <reg<19>> in unit <registroArchivo_RF> has a constant value of 00000000000000000000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <reg<20>> in unit <registroArchivo_RF> has a constant value of 00000000000000000000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <reg<21>> in unit <registroArchivo_RF> has a constant value of 00000000000000000000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <reg<22>> in unit <registroArchivo_RF> has a constant value of 00000000000000000000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <reg<23>> in unit <registroArchivo_RF> has a constant value of 00000000000000000000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <reg<24>> in unit <registroArchivo_RF> has a constant value of 00000000000000000000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <reg<25>> in unit <registroArchivo_RF> has a constant value of 00000000000000000000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <reg<26>> in unit <registroArchivo_RF> has a constant value of 00000000000000000000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <reg<27>> in unit <registroArchivo_RF> has a constant value of 00000000000000000000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <reg<28>> in unit <registroArchivo_RF> has a constant value of 00000000000000000000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <reg<29>> in unit <registroArchivo_RF> has a constant value of 00000000000000000000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <reg<30>> in unit <registroArchivo_RF> has a constant value of 00000000000000000000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <reg<31>> in unit <registroArchivo_RF> has a constant value of 00000000000000000000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <reg<32>> in unit <registroArchivo_RF> has a constant value of 00000000000000000000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <reg<33>> in unit <registroArchivo_RF> has a constant value of 00000000000000000000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <reg<34>> in unit <registroArchivo_RF> has a constant value of 00000000000000000000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <reg<35>> in unit <registroArchivo_RF> has a constant value of 00000000000000000000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <reg<36>> in unit <registroArchivo_RF> has a constant value of 00000000000000000000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <reg<37>> in unit <registroArchivo_RF> has a constant value of 00000000000000000000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <reg<38>> in unit <registroArchivo_RF> has a constant value of 00000000000000000000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <reg<39>> in unit <registroArchivo_RF> has a constant value of 00000000000000000000000000000000 during circuit operation. The register is replaced by logic.
+Entity <registroArchivo_RF> analyzed. Unit <registroArchivo_RF> generated.
+
+Analyzing Entity <Alu> in library <work> (Architecture <behavioral>).
+Entity <Alu> analyzed. Unit <Alu> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <sumador>.
+    Related source file is "C:/Users/Administrador/Desktop/procesador_aleja/procesador_aleja/sumador.vhd".
+    Found 32-bit adder for signal <salida_sumador>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <sumador> synthesized.
+
+
+Synthesizing Unit <nPC>.
+    Related source file is "C:/Users/Administrador/Desktop/procesador_aleja/procesador_aleja/nPC.vhd".
+    Found 32-bit register for signal <salida_nPC>.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+Unit <nPC> synthesized.
+
+
+Synthesizing Unit <PC>.
+    Related source file is "C:/Users/Administrador/Desktop/procesador_aleja/procesador_aleja/pc.vhd".
+    Found 32-bit register for signal <salida_PC>.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+Unit <PC> synthesized.
+
+
+Synthesizing Unit <memoriaInstrucciones>.
+    Related source file is "C:/Users/Administrador/Desktop/procesador_aleja/procesador_aleja/memoriaInstrucciones.vhd".
+WARNING:Xst:647 - Input <direccion<31:6>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1781 - Signal <instructions> is used but never assigned. Tied to default value.
+    Found 32x32-bit ROM for signal <$varindex0000> created at line 67.
+    Summary:
+	inferred   1 ROM(s).
+Unit <memoriaInstrucciones> synthesized.
+
+
+Synthesizing Unit <unidadControl>.
+    Related source file is "C:/Users/Administrador/Desktop/procesador_aleja/procesador_aleja/unidadControl.vhd".
+WARNING:Xst:737 - Found 6-bit latch for signal <salida_UC>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+Unit <unidadControl> synthesized.
+
+
+Synthesizing Unit <registroArchivo_RF>.
+    Related source file is "C:/Users/Administrador/Desktop/procesador_aleja/procesador_aleja/registroArchivo_RF.vhd".
+WARNING:Xst:647 - Input <rs2> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <rd> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <registroArchivo_RF> synthesized.
+
+
+Synthesizing Unit <Alu>.
+    Related source file is "C:/Users/Administrador/Desktop/procesador_aleja/procesador_aleja/Alu.vhd".
+    Found 32-bit addsub for signal <salida_ALU$addsub0000>.
+    Found 32-bit xor2 for signal <salida_ALU$xor0000> created at line 61.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <Alu> synthesized.
+
+
+Synthesizing Unit <procesador_finalaleja>.
+    Related source file is "C:/Users/Administrador/Desktop/procesador_aleja/procesador_aleja/procesador_finalaleja.vhd".
+WARNING:Xst:646 - Signal <imToUR<13:5>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <procesador_finalaleja> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 32x32-bit ROM                                         : 1
+# Adders/Subtractors                                   : 2
+ 32-bit adder                                          : 1
+ 32-bit addsub                                         : 1
+# Registers                                            : 2
+ 32-bit register                                       : 2
+# Latches                                              : 1
+ 6-bit latch                                           : 1
+# Xors                                                 : 1
+ 32-bit xor2                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:2677 - Node <salida_PC_5> of sequential type is unconnected in block <Inst_PC>.
+WARNING:Xst:2677 - Node <salida_PC_6> of sequential type is unconnected in block <Inst_PC>.
+WARNING:Xst:2677 - Node <salida_PC_7> of sequential type is unconnected in block <Inst_PC>.
+WARNING:Xst:2677 - Node <salida_PC_8> of sequential type is unconnected in block <Inst_PC>.
+WARNING:Xst:2677 - Node <salida_PC_9> of sequential type is unconnected in block <Inst_PC>.
+WARNING:Xst:2677 - Node <salida_PC_10> of sequential type is unconnected in block <Inst_PC>.
+WARNING:Xst:2677 - Node <salida_PC_11> of sequential type is unconnected in block <Inst_PC>.
+WARNING:Xst:2677 - Node <salida_PC_12> of sequential type is unconnected in block <Inst_PC>.
+WARNING:Xst:2677 - Node <salida_PC_13> of sequential type is unconnected in block <Inst_PC>.
+WARNING:Xst:2677 - Node <salida_PC_14> of sequential type is unconnected in block <Inst_PC>.
+WARNING:Xst:2677 - Node <salida_PC_15> of sequential type is unconnected in block <Inst_PC>.
+WARNING:Xst:2677 - Node <salida_PC_16> of sequential type is unconnected in block <Inst_PC>.
+WARNING:Xst:2677 - Node <salida_PC_17> of sequential type is unconnected in block <Inst_PC>.
+WARNING:Xst:2677 - Node <salida_PC_18> of sequential type is unconnected in block <Inst_PC>.
+WARNING:Xst:2677 - Node <salida_PC_19> of sequential type is unconnected in block <Inst_PC>.
+WARNING:Xst:2677 - Node <salida_PC_20> of sequential type is unconnected in block <Inst_PC>.
+WARNING:Xst:2677 - Node <salida_PC_21> of sequential type is unconnected in block <Inst_PC>.
+WARNING:Xst:2677 - Node <salida_PC_22> of sequential type is unconnected in block <Inst_PC>.
+WARNING:Xst:2677 - Node <salida_PC_23> of sequential type is unconnected in block <Inst_PC>.
+WARNING:Xst:2677 - Node <salida_PC_24> of sequential type is unconnected in block <Inst_PC>.
+WARNING:Xst:2677 - Node <salida_PC_25> of sequential type is unconnected in block <Inst_PC>.
+WARNING:Xst:2677 - Node <salida_PC_26> of sequential type is unconnected in block <Inst_PC>.
+WARNING:Xst:2677 - Node <salida_PC_27> of sequential type is unconnected in block <Inst_PC>.
+WARNING:Xst:2677 - Node <salida_PC_28> of sequential type is unconnected in block <Inst_PC>.
+WARNING:Xst:2677 - Node <salida_PC_29> of sequential type is unconnected in block <Inst_PC>.
+WARNING:Xst:2677 - Node <salida_PC_30> of sequential type is unconnected in block <Inst_PC>.
+WARNING:Xst:2677 - Node <salida_PC_31> of sequential type is unconnected in block <Inst_PC>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 32x32-bit ROM                                         : 1
+# Adders/Subtractors                                   : 2
+ 32-bit adder                                          : 1
+ 32-bit addsub                                         : 1
+# Registers                                            : 64
+ Flip-Flops                                            : 64
+# Latches                                              : 1
+ 6-bit latch                                           : 1
+# Xors                                                 : 1
+ 32-bit xor2                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <salida_UC_4> in Unit <unidadControl> is equivalent to the following FF/Latch, which will be removed : <salida_UC_5> 
+
+Optimizing unit <procesador_finalaleja> ...
+
+Optimizing unit <nPC> ...
+
+Optimizing unit <PC> ...
+
+Optimizing unit <unidadControl> ...
+WARNING:Xst:1710 - FF/Latch <Inst_unidadControl/salida_UC_4> (without init value) has a constant value of 0 in block <procesador_finalaleja>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Inst_unidadControl/salida_UC_3> (without init value) has a constant value of 0 in block <procesador_finalaleja>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <Inst_nPC/salida_nPC_31> of sequential type is unconnected in block <procesador_finalaleja>.
+WARNING:Xst:2677 - Node <Inst_nPC/salida_nPC_30> of sequential type is unconnected in block <procesador_finalaleja>.
+WARNING:Xst:2677 - Node <Inst_nPC/salida_nPC_29> of sequential type is unconnected in block <procesador_finalaleja>.
+WARNING:Xst:2677 - Node <Inst_nPC/salida_nPC_28> of sequential type is unconnected in block <procesador_finalaleja>.
+WARNING:Xst:2677 - Node <Inst_nPC/salida_nPC_27> of sequential type is unconnected in block <procesador_finalaleja>.
+WARNING:Xst:2677 - Node <Inst_nPC/salida_nPC_26> of sequential type is unconnected in block <procesador_finalaleja>.
+WARNING:Xst:2677 - Node <Inst_nPC/salida_nPC_25> of sequential type is unconnected in block <procesador_finalaleja>.
+WARNING:Xst:2677 - Node <Inst_nPC/salida_nPC_24> of sequential type is unconnected in block <procesador_finalaleja>.
+WARNING:Xst:2677 - Node <Inst_nPC/salida_nPC_23> of sequential type is unconnected in block <procesador_finalaleja>.
+WARNING:Xst:2677 - Node <Inst_nPC/salida_nPC_22> of sequential type is unconnected in block <procesador_finalaleja>.
+WARNING:Xst:2677 - Node <Inst_nPC/salida_nPC_21> of sequential type is unconnected in block <procesador_finalaleja>.
+WARNING:Xst:2677 - Node <Inst_nPC/salida_nPC_20> of sequential type is unconnected in block <procesador_finalaleja>.
+WARNING:Xst:2677 - Node <Inst_nPC/salida_nPC_19> of sequential type is unconnected in block <procesador_finalaleja>.
+WARNING:Xst:2677 - Node <Inst_nPC/salida_nPC_18> of sequential type is unconnected in block <procesador_finalaleja>.
+WARNING:Xst:2677 - Node <Inst_nPC/salida_nPC_17> of sequential type is unconnected in block <procesador_finalaleja>.
+WARNING:Xst:2677 - Node <Inst_nPC/salida_nPC_16> of sequential type is unconnected in block <procesador_finalaleja>.
+WARNING:Xst:2677 - Node <Inst_nPC/salida_nPC_15> of sequential type is unconnected in block <procesador_finalaleja>.
+WARNING:Xst:2677 - Node <Inst_nPC/salida_nPC_14> of sequential type is unconnected in block <procesador_finalaleja>.
+WARNING:Xst:2677 - Node <Inst_nPC/salida_nPC_13> of sequential type is unconnected in block <procesador_finalaleja>.
+WARNING:Xst:2677 - Node <Inst_nPC/salida_nPC_12> of sequential type is unconnected in block <procesador_finalaleja>.
+WARNING:Xst:2677 - Node <Inst_nPC/salida_nPC_11> of sequential type is unconnected in block <procesador_finalaleja>.
+WARNING:Xst:2677 - Node <Inst_nPC/salida_nPC_10> of sequential type is unconnected in block <procesador_finalaleja>.
+WARNING:Xst:2677 - Node <Inst_nPC/salida_nPC_9> of sequential type is unconnected in block <procesador_finalaleja>.
+WARNING:Xst:2677 - Node <Inst_nPC/salida_nPC_8> of sequential type is unconnected in block <procesador_finalaleja>.
+WARNING:Xst:2677 - Node <Inst_nPC/salida_nPC_7> of sequential type is unconnected in block <procesador_finalaleja>.
+WARNING:Xst:2677 - Node <Inst_nPC/salida_nPC_6> of sequential type is unconnected in block <procesador_finalaleja>.
+WARNING:Xst:2677 - Node <Inst_nPC/salida_nPC_5> of sequential type is unconnected in block <procesador_finalaleja>.
+WARNING:Xst:2677 - Node <Inst_PC/salida_PC_31> of sequential type is unconnected in block <procesador_finalaleja>.
+WARNING:Xst:2677 - Node <Inst_PC/salida_PC_30> of sequential type is unconnected in block <procesador_finalaleja>.
+WARNING:Xst:2677 - Node <Inst_PC/salida_PC_29> of sequential type is unconnected in block <procesador_finalaleja>.
+WARNING:Xst:2677 - Node <Inst_PC/salida_PC_28> of sequential type is unconnected in block <procesador_finalaleja>.
+WARNING:Xst:2677 - Node <Inst_PC/salida_PC_27> of sequential type is unconnected in block <procesador_finalaleja>.
+WARNING:Xst:2677 - Node <Inst_PC/salida_PC_26> of sequential type is unconnected in block <procesador_finalaleja>.
+WARNING:Xst:2677 - Node <Inst_PC/salida_PC_25> of sequential type is unconnected in block <procesador_finalaleja>.
+WARNING:Xst:2677 - Node <Inst_PC/salida_PC_24> of sequential type is unconnected in block <procesador_finalaleja>.
+WARNING:Xst:2677 - Node <Inst_PC/salida_PC_23> of sequential type is unconnected in block <procesador_finalaleja>.
+WARNING:Xst:2677 - Node <Inst_PC/salida_PC_22> of sequential type is unconnected in block <procesador_finalaleja>.
+WARNING:Xst:2677 - Node <Inst_PC/salida_PC_21> of sequential type is unconnected in block <procesador_finalaleja>.
+WARNING:Xst:2677 - Node <Inst_PC/salida_PC_20> of sequential type is unconnected in block <procesador_finalaleja>.
+WARNING:Xst:2677 - Node <Inst_PC/salida_PC_19> of sequential type is unconnected in block <procesador_finalaleja>.
+WARNING:Xst:2677 - Node <Inst_PC/salida_PC_18> of sequential type is unconnected in block <procesador_finalaleja>.
+WARNING:Xst:2677 - Node <Inst_PC/salida_PC_17> of sequential type is unconnected in block <procesador_finalaleja>.
+WARNING:Xst:2677 - Node <Inst_PC/salida_PC_16> of sequential type is unconnected in block <procesador_finalaleja>.
+WARNING:Xst:2677 - Node <Inst_PC/salida_PC_15> of sequential type is unconnected in block <procesador_finalaleja>.
+WARNING:Xst:2677 - Node <Inst_PC/salida_PC_14> of sequential type is unconnected in block <procesador_finalaleja>.
+WARNING:Xst:2677 - Node <Inst_PC/salida_PC_13> of sequential type is unconnected in block <procesador_finalaleja>.
+WARNING:Xst:2677 - Node <Inst_PC/salida_PC_12> of sequential type is unconnected in block <procesador_finalaleja>.
+WARNING:Xst:2677 - Node <Inst_PC/salida_PC_11> of sequential type is unconnected in block <procesador_finalaleja>.
+WARNING:Xst:2677 - Node <Inst_PC/salida_PC_10> of sequential type is unconnected in block <procesador_finalaleja>.
+WARNING:Xst:2677 - Node <Inst_PC/salida_PC_9> of sequential type is unconnected in block <procesador_finalaleja>.
+WARNING:Xst:2677 - Node <Inst_PC/salida_PC_8> of sequential type is unconnected in block <procesador_finalaleja>.
+WARNING:Xst:2677 - Node <Inst_PC/salida_PC_7> of sequential type is unconnected in block <procesador_finalaleja>.
+WARNING:Xst:2677 - Node <Inst_PC/salida_PC_6> of sequential type is unconnected in block <procesador_finalaleja>.
+WARNING:Xst:2677 - Node <Inst_PC/salida_PC_5> of sequential type is unconnected in block <procesador_finalaleja>.
+WARNING:Xst:2677 - Node <Inst_unidadControl/salida_UC_1> of sequential type is unconnected in block <procesador_finalaleja>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block procesador_finalaleja, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 10
+ Flip-Flops                                            : 10
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : procesador_finalaleja.ngr
+Top Level Output File Name         : procesador_finalaleja
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 34
+
+Cell Usage :
+# BELS                             : 25
+#      GND                         : 1
+#      INV                         : 1
+#      LUT1                        : 4
+#      LUT2                        : 2
+#      LUT3                        : 3
+#      LUT4                        : 3
+#      MUXCY                       : 4
+#      MUXF5                       : 1
+#      VCC                         : 1
+#      XORCY                       : 5
+# FlipFlops/Latches                : 12
+#      FDR                         : 10
+#      LD                          : 2
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 33
+#      IBUF                        : 1
+#      OBUF                        : 32
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-5 
+
+ Number of Slices:                        7  out of   4656     0%  
+ Number of Slice Flip Flops:             12  out of   9312     0%  
+ Number of 4 input LUTs:                 13  out of   9312     0%  
+ Number of IOs:                          34
+ Number of bonded IOBs:                  34  out of    232    14%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+------------------------------------------------------------------------------------+----------------------------------------+-------+
+Clock Signal                                                                        | Clock buffer(FF name)                  | Load  |
+------------------------------------------------------------------------------------+----------------------------------------+-------+
+clk                                                                                 | BUFGP                                  | 10    |
+Inst_unidadControl/salida_UC_cmp_eq0000(Inst_memoriaInstrucciones/instruccion<31>:O)| NONE(*)(Inst_unidadControl/salida_UC_2)| 2     |
+------------------------------------------------------------------------------------+----------------------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 3.132ns (Maximum Frequency: 319.290MHz)
+   Minimum input arrival time before clock: 3.144ns
+   Maximum output required time after clock: 5.951ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 3.132ns (frequency: 319.290MHz)
+  Total number of paths / destination ports: 20 / 10
+-------------------------------------------------------------------------
+Delay:               3.132ns (Levels of Logic = 5)
+  Source:            Inst_nPC/salida_nPC_1 (FF)
+  Destination:       Inst_nPC/salida_nPC_4 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: Inst_nPC/salida_nPC_1 to Inst_nPC/salida_nPC_4
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.514   0.532  Inst_nPC/salida_nPC_1 (Inst_nPC/salida_nPC_1)
+     LUT1:I0->O            1   0.612   0.000  Inst_sumador/Madd_salida_sumador_cy<1>_rt (Inst_sumador/Madd_salida_sumador_cy<1>_rt)
+     MUXCY:S->O            1   0.404   0.000  Inst_sumador/Madd_salida_sumador_cy<1> (Inst_sumador/Madd_salida_sumador_cy<1>)
+     MUXCY:CI->O           1   0.051   0.000  Inst_sumador/Madd_salida_sumador_cy<2> (Inst_sumador/Madd_salida_sumador_cy<2>)
+     MUXCY:CI->O           0   0.051   0.000  Inst_sumador/Madd_salida_sumador_cy<3> (Inst_sumador/Madd_salida_sumador_cy<3>)
+     XORCY:CI->O           1   0.699   0.000  Inst_sumador/Madd_salida_sumador_xor<4> (sumadorToNPC<4>)
+     FDR:D                     0.268          Inst_nPC/salida_nPC_4
+    ----------------------------------------
+    Total                      3.132ns (2.600ns logic, 0.532ns route)
+                                       (83.0% logic, 17.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 10 / 10
+-------------------------------------------------------------------------
+Offset:              2.751ns (Levels of Logic = 1)
+  Source:            reset (PAD)
+  Destination:       Inst_nPC/salida_nPC_4 (FF)
+  Destination Clock: clk rising
+
+  Data Path: reset to Inst_nPC/salida_nPC_4
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            14   1.106   0.850  reset_IBUF (reset_IBUF)
+     FDR:R                     0.795          Inst_nPC/salida_nPC_0
+    ----------------------------------------
+    Total                      2.751ns (1.901ns logic, 0.850ns route)
+                                       (69.1% logic, 30.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Inst_unidadControl/salida_UC_cmp_eq0000'
+  Total number of paths / destination ports: 3 / 2
+-------------------------------------------------------------------------
+Offset:              3.144ns (Levels of Logic = 3)
+  Source:            reset (PAD)
+  Destination:       Inst_unidadControl/salida_UC_2 (LATCH)
+  Destination Clock: Inst_unidadControl/salida_UC_cmp_eq0000 falling
+
+  Data Path: reset to Inst_unidadControl/salida_UC_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            14   1.106   0.880  reset_IBUF (reset_IBUF)
+     LUT3:I2->O            1   0.612   0.000  Inst_memoriaInstrucciones/instruccion<20>38_F (N7)
+     MUXF5:I0->O           1   0.278   0.000  Inst_memoriaInstrucciones/instruccion<20>38 (imToUR<20>)
+     LD:D                      0.268          Inst_unidadControl/salida_UC_2
+    ----------------------------------------
+    Total                      3.144ns (2.264ns logic, 0.880ns route)
+                                       (72.0% logic, 28.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Inst_unidadControl/salida_UC_cmp_eq0000'
+  Total number of paths / destination ports: 64 / 32
+-------------------------------------------------------------------------
+Offset:              5.951ns (Levels of Logic = 2)
+  Source:            Inst_unidadControl/salida_UC_2 (LATCH)
+  Destination:       resultadoProcesador<31> (PAD)
+  Source Clock:      Inst_unidadControl/salida_UC_cmp_eq0000 falling
+
+  Data Path: Inst_unidadControl/salida_UC_2 to resultadoProcesador<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.588   0.509  Inst_unidadControl/salida_UC_2 (Inst_unidadControl/salida_UC_2)
+     LUT2:I0->O           32   0.612   1.073  resultadoProcesador<10>1 (resultadoProcesador_10_OBUF)
+     OBUF:I->O                 3.169          resultadoProcesador_31_OBUF (resultadoProcesador<31>)
+    ----------------------------------------
+    Total                      5.951ns (4.369ns logic, 1.582ns route)
+                                       (73.4% logic, 26.6% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 17.00 secs
+Total CPU time to Xst completion: 16.95 secs
+ 
+--> 
+
+Total memory usage is 265168 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   94 (   0 filtered)
+Number of infos    :   46 (   0 filtered)
+
