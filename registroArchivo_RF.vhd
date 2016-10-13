@@ -37,6 +37,7 @@ entity registroArchivo_RF is
            reset : in  STD_LOGIC;
            crs1 : out  STD_LOGIC_VECTOR (31 downto 0);
            crs2 : out  STD_LOGIC_VECTOR (31 downto 0);
+			  crd : in  STD_LOGIC_VECTOR (31 downto 0);
            rd : in  STD_LOGIC_VECTOR (4 downto 0));
 end registroArchivo_RF;
 
@@ -46,7 +47,7 @@ type ram_type is array (0 to 39) of std_logic_vector (31 downto 0);
 	signal reg : ram_type :=(others => x"00000000");
 
 begin
-process(rs1,rs2,reset, rd)
+process(rs1,rs2,reset, rd,crd)
 begin
 	if(reset = '1')then
 				crs1 <= (others=>'0');
@@ -58,6 +59,9 @@ begin
 				crs2 <= reg(conv_integer(rs1));
 				
 				
+			if(rd  /= "000000")then
+					reg(conv_integer(rd)) <= crd;
+				end if;
 			end if;
 	
 end process; 
