@@ -47,20 +47,43 @@ begin
  case (alu_op) is 
 			when "000001" => -- add
 				salida_ALU <= entrada_suma1 + entrada_sum2;
-			when "000010" => -- sub
+			when "000010" => -- addcc
+				salida_ALU <= entrada_suma1 + entrada_sum2;
+         when "000011" => -- addX
+				salida_ALU <= entrada_suma1 + entrada_sum2;
+         when "000100" => -- addXcc
+				salida_ALU <= entrada_suma1 + entrada_sum2;
+         when "000101" => -- sub
+				salida_ALU <= entrada_suma1 + entrada_sum2;				
+			when "000110" => -- subcc
 				salida_ALU <= entrada_suma1 - entrada_sum2;
-			when "000011" => --and
+			when "000111" => -- subX
+				salida_ALU <= entrada_suma1 - entrada_sum2;
+         when "001000" => -- subXcc
+				salida_ALU <= entrada_suma1 - entrada_sum2;
+         when "001001" => -- and
+				salida_ALU <= entrada_suma1 - entrada_sum2;
+			when "001010" => -- andn
+				salida_ALU <= entrada_suma1 - entrada_sum2;	
+			when "001011" => --andNcc
 				salida_ALU <= entrada_suma1 and entrada_sum2;
-			when "000100" => --andn
-				salida_ALU <= entrada_suma1 nand entrada_sum2;
-			when "000101" => -- or
+			when "001100" => --andcc
+				salida_ALU <= entrada_suma1 and entrada_sum2;
+         when "001101" => --or
+				salida_ALU <= entrada_suma1 and entrada_sum2;
+	      when "001110" => --orn
+				salida_ALU <= entrada_suma1 and entrada_sum2;	
+	      when "001111" => --orcc
+				salida_ALU <= entrada_suma1 and entrada_sum2;				
+			when "010000" => --orNcc
+				salida_ALU <= entrada_suma1 nand entrada_sum2;     
+			when "010010" => -- xor
 				salida_ALU <= entrada_suma1 or entrada_sum2;
-			when "000110" => -- orn
-				salida_ALU <= entrada_suma1 nor entrada_sum2;
-			when "000111" => -- xor
-				salida_ALU <= entrada_suma1 xor entrada_sum2;
-			when "001000" => -- xorn
-				salida_ALU <= entrada_suma1 xnor entrada_sum2;
+			when "010011" => -- xnor
+				salida_ALU <= entrada_suma1 or entrada_sum2;
+         when "010100" => -- xorcc
+				salida_ALU <= entrada_suma1 or entrada_sum2;				
+				
 			when others => --nop
 				salida_ALU <= (others=>'0');
 		end case;

@@ -31,5 +31,7 @@ Compiling architecture arq_procesador of entity procesador_finalaleja [procesado
 Compiling architecture behavior of entity test_procesadorfinal
 Time Resolution for simulation is 1ps.
 Waiting for 11 sub-compilation(s) to finish...
-ERROR:Simulator:904 - Unable to remove previous simulation file isim/test_procesadorfinal_isim_beh.exe.sim/test_procesadorfinal_isim_beh.exe. Please check if you have another instance of this simulation running on your system, terminate it and then recompile your design. System Error Message: boost::filesystem::remove: Acceso denegado: "isim\test_procesadorfinal_isim_beh.exe.sim\test_procesadorfinal_isim_beh.exe"
-ERROR:Simulator:861 - Failed to link the design
+Compiled 23 VHDL Units
+Built simulation executable C:/Users/Administrador/Desktop/procesador_aleja/procesador_aleja/test_procesadorfinal_isim_beh.exe
+Fuse Memory Usage: 36244 KB
+Fuse CPU Usage: 1076 ms
