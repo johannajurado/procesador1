@@ -1,22 +1,35 @@
-Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o H:/procesador_aleja/procesador_aleja/memInstrucciones_test_isim_beh.exe -prj H:/procesador_aleja/procesador_aleja/memInstrucciones_test_beh.prj work.memInstrucciones_test 
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -o "C:/Users/Administrador/Desktop/procesador_aleja/procesador_aleja/test_procesadorfinal_isim_beh.exe" -prj "C:/Users/Administrador/Desktop/procesador_aleja/procesador_aleja/test_procesadorfinal_beh.prj" "work.test_procesadorfinal" 
 ISim P.20131013 (signature 0x7708f090)
 Number of CPUs detected in this system: 2
 Turning on mult-threading, number of parallel sub-compilation jobs: 4 
 Determining compilation order of HDL files
-Parsing VHDL file "H:/procesador_aleja/procesador_aleja/memoriaInstrucciones.vhd" into library work
-Parsing VHDL file "H:/procesador_aleja/procesador_aleja/memInstrucciones_test.vhd" into library work
+Parsing VHDL file "C:/Users/Administrador/Desktop/procesador_aleja/procesador_aleja/unidadControl.vhd" into library work
+Parsing VHDL file "C:/Users/Administrador/Desktop/procesador_aleja/procesador_aleja/sumador.vhd" into library work
+Parsing VHDL file "C:/Users/Administrador/Desktop/procesador_aleja/procesador_aleja/registroArchivo_RF.vhd" into library work
+Parsing VHDL file "C:/Users/Administrador/Desktop/procesador_aleja/procesador_aleja/pc.vhd" into library work
+Parsing VHDL file "C:/Users/Administrador/Desktop/procesador_aleja/procesador_aleja/nPC.vhd" into library work
+Parsing VHDL file "C:/Users/Administrador/Desktop/procesador_aleja/procesador_aleja/memoriaInstrucciones.vhd" into library work
+Parsing VHDL file "C:/Users/Administrador/Desktop/procesador_aleja/procesador_aleja/Alu.vhd" into library work
+Parsing VHDL file "C:/Users/Administrador/Desktop/procesador_aleja/procesador_aleja/procesador_finalaleja.vhd" into library work
+Parsing VHDL file "C:/Users/Administrador/Desktop/procesador_aleja/procesador_aleja/test_procesadorfinal.vhd" into library work
 Starting static elaboration
 Completed static elaboration
 Compiling package standard
 Compiling package std_logic_1164
 Compiling package std_logic_arith
 Compiling package std_logic_unsigned
+Compiling package numeric_std
 Compiling package textio
+Compiling architecture behavioral of entity sumador [sumador_default]
+Compiling architecture behavioral of entity nPC [npc_default]
+Compiling architecture behavioral of entity PC [pc_default]
 Compiling architecture behavioral of entity memoriaInstrucciones [memoriainstrucciones_default]
-Compiling architecture behavior of entity meminstrucciones_test
+Compiling architecture behavioral of entity unidadControl [unidadcontrol_default]
+Compiling architecture behavioral of entity registroArchivo_RF [registroarchivo_rf_default]
+Compiling architecture behavioral of entity Alu [alu_default]
+Compiling architecture arq_procesador of entity procesador_finalaleja [procesador_finalaleja_default]
+Compiling architecture behavior of entity test_procesadorfinal
 Time Resolution for simulation is 1ps.
-Waiting for 2 sub-compilation(s) to finish...
-Compiled 8 VHDL Units
-Built simulation executable H:/procesador_aleja/procesador_aleja/memInstrucciones_test_isim_beh.exe
-Fuse Memory Usage: 33060 KB
-Fuse CPU Usage: 748 ms
+Waiting for 11 sub-compilation(s) to finish...
+ERROR:Simulator:904 - Unable to remove previous simulation file isim/test_procesadorfinal_isim_beh.exe.sim/test_procesadorfinal_isim_beh.exe. Please check if you have another instance of this simulation running on your system, terminate it and then recompile your design. System Error Message: boost::filesystem::remove: Acceso denegado: "isim\test_procesadorfinal_isim_beh.exe.sim\test_procesadorfinal_isim_beh.exe"
+ERROR:Simulator:861 - Failed to link the design

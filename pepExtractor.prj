@@ -1,1 +1,8 @@
 work	"Alu.vhd"
+work	"memoriaInstrucciones.vhd"
+work	"nPC.vhd"
+work	"pc.vhd"
+work	"procesador_finalaleja.vhd"
+work	"registroArchivo_RF.vhd"
+work	"sumador.vhd"
+work	"unidadControl.vhd"
