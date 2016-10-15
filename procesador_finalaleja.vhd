@@ -55,14 +55,6 @@ COMPONENT sumador
 		);
 	END COMPONENT;
 	
-	COMPONENT PC
-	PORT(
-		clk : IN std_logic;
-		reset : IN std_logic;
-		actual_PC : IN std_logic_vector(31 downto 0);          
-		salida_PC : OUT std_logic_vector(31 downto 0)
-		);
-	END COMPONENT;
 	
 		COMPONENT memoriaInstrucciones
 	PORT(
@@ -101,7 +93,7 @@ COMPONENT sumador
 		);
 	END COMPONENT;
 
-signal sumadorToNPC,npcToPC,pcToIM,imToUR,aluResult,rfToalup1,rfToalup2,aluTorf : STD_LOGIC_VECTOR (31 downto 0);--creo senales de 32
+signal sumadorToNPC,npcToPC,pcToIM,imToUR,aluResult,rfToalup1,rfToalup2 : STD_LOGIC_VECTOR (31 downto 0);--creo senales de 32
 signal alup_op1: STD_LOGIC_VECTOR (5 downto 0);--creo senales de 6
 
 begin
@@ -120,13 +112,15 @@ begin
 		actual =>sumadorToNPC ,
 		salida_nPC =>npcToPC
 	);
-
-	Inst_PC: PC PORT MAP(
+	
+	Inst_PC: nPC PORT MAP(
 		clk =>clk ,
 		reset =>reset ,
-		actual_PC =>npcToPC ,
-		salida_PC =>pcToIM 
+		actual =>npcToPC ,
+		salida_nPC =>pcToIM
 	);
+
+
 
 	Inst_memoriaInstrucciones: memoriaInstrucciones PORT MAP( --la memoria se divide entre la unidad de control y RF
 		direccion =>pcToIM ,
@@ -144,10 +138,12 @@ Inst_unidadControl: unidadControl PORT MAP(
 		rs1 =>imToUR(18 downto 14) ,
 		rs2 =>imToUR(4 downto 0) ,
 		reset => reset,
+		rd => imToUR(29 downto 25),
+		crd =>aluResult ,
 		crs1 =>rfToalup1 ,
-		crs2 =>rfToalup2 ,
-		crd =>aluTorf ,
-		rd => imToUR(29 downto 25)
+		crs2 =>rfToalup2 
+		
+		
 	);
 	
 	

@@ -1,5 +1,5 @@
 ISim log file
-Running: C:\Users\Administrador\Desktop\procesador_aleja\procesador_aleja\test_procesadorfinal_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/Administrador/Desktop/procesador_aleja/procesador_aleja/test_procesadorfinal_isim_beh.wdb 
+Running: C:\Users\Juan\Desktop\procesador 1\procesador_aleja\procesador_aleja\test_procesadorfinal_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/Juan/Desktop/procesador 1/procesador_aleja/procesador_aleja/test_procesadorfinal_isim_beh.wdb 
 ISim P.20131013 (signature 0x7708f090)
 WARNING: A WEBPACK license was found.
 WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
@@ -19,4 +19,6 @@ Finished circuit initialization process.
 ERROR: Index 32 out of bound 0 to 31. 
 ERROR: In process memoriaInstrucciones.vhd:62 
  
+INFO: Simulator is stopped.
+# run 100ns
 INFO: Simulator is stopped.

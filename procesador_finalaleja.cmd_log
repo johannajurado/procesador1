@@ -1,3 +1,4 @@
 xst -intstyle ise -ifn "C:/Users/Administrador/Desktop/procesador_aleja/procesador_aleja/procesador_finalaleja.xst" -ofn "C:/Users/Administrador/Desktop/procesador_aleja/procesador_aleja/procesador_finalaleja.syr" 
 xst -intstyle ise -ifn "C:/Users/Administrador/Desktop/procesador_aleja/procesador_aleja/procesador_finalaleja.xst" -ofn "C:/Users/Administrador/Desktop/procesador_aleja/procesador_aleja/procesador_finalaleja.syr" 
 xst -intstyle ise -ifn "C:/Users/Administrador/Desktop/procesador_aleja/procesador_aleja/procesador_finalaleja.xst" -ofn "C:/Users/Administrador/Desktop/procesador_aleja/procesador_aleja/procesador_finalaleja.syr" 
+xst -intstyle ise -ifn "C:/Users/Juan/Desktop/procesador 1/procesador_aleja/procesador_aleja/procesador_finalaleja.xst" -ofn "C:/Users/Juan/Desktop/procesador 1/procesador_aleja/procesador_aleja/procesador_finalaleja.syr" 
