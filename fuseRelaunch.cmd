@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -o "C:/Users/Juan/Desktop/procesador 1/procesador_aleja/procesador_aleja/test_procesadorfinal_isim_beh.exe" -prj "C:/Users/Juan/Desktop/procesador 1/procesador_aleja/procesador_aleja/test_procesadorfinal_beh.prj" "work.test_procesadorfinal" 
+-intstyle "ise" -incremental -o "I:/ARQUITECTURA DE COMPUTADORES/procesador 1/procesador_aleja/procesador_aleja/test_procesadorfinal_isim_beh.exe" -prj "I:/ARQUITECTURA DE COMPUTADORES/procesador 1/procesador_aleja/procesador_aleja/test_procesadorfinal_beh.prj" "work.test_procesadorfinal" 
