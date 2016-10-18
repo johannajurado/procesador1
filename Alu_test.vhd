@@ -81,7 +81,7 @@ BEGIN
    begin	
 		entrada_suma1 <= x"00000004";
 		entrada_sum2 <= x"00000002";
-		alu_op <= "000001";
+		alu_op <= "000000";
      
 
 

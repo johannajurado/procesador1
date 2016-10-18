@@ -45,46 +45,46 @@ begin
 process(entrada_suma1, entrada_sum2, alu_op)
 begin
  case (alu_op) is 
-			when "000001" => -- add
+			when "000000" => -- add
 				salida_ALU <= entrada_suma1 + entrada_sum2;
-			when "000010" => -- addcc
+			when "010000" => -- addcc
 				salida_ALU <= entrada_suma1 + entrada_sum2;
-         when "000011" => -- addX
+         when "001000" => -- addX
 				salida_ALU <= entrada_suma1 + entrada_sum2;
-         when "000100" => -- addXcc
+         when "011000" => -- addXcc
 				salida_ALU <= entrada_suma1 + entrada_sum2;
-         when "000101" => -- sub
+         when "000100" => -- sub
 				salida_ALU <= entrada_suma1 - entrada_sum2;				
-			when "000110" => -- subcc
+			when "010100" => -- subcc
 				salida_ALU <= entrada_suma1 - entrada_sum2;
-			when "000111" => -- subX
+			when "001100" => -- subX
 				salida_ALU <= entrada_suma1 - entrada_sum2;
-         when "001000" => -- subXcc
+         when "011100" => -- subXcc
 				salida_ALU <= entrada_suma1 - entrada_sum2;
-         when "001001" => -- and
+         when "000001" => -- and
 				salida_ALU <= entrada_suma1 and entrada_sum2;
-			when "001010" => -- andn
+			when "000101" => -- andn
 				salida_ALU <= entrada_suma1 and entrada_sum2;	
-			when "001011" => --andNcc
+			when "010101" => --andNcc
 				salida_ALU <= entrada_suma1 and entrada_sum2;
-			when "001100" => --andcc
+			when "010001" => --andcc
 				salida_ALU <= entrada_suma1 and entrada_sum2;
-         when "001101" => --or
+         when "000010" => --or
 				salida_ALU <= entrada_suma1 or entrada_sum2;
-	      when "001110" => --orn
+	      when "000110" => --orn
 				salida_ALU <= entrada_suma1 or entrada_sum2;	
-	      when "001111" => --orcc
+	      when "010010" => --orcc
 				salida_ALU <= entrada_suma1 or entrada_sum2;				
-			when "010000" => --orNcc
+			when "010110" => --orNcc
 				salida_ALU <= entrada_suma1 or entrada_sum2;     
-			when "010010" => -- xor
+			when "000011" => -- xor
 				salida_ALU <= entrada_suma1 xor entrada_sum2;
-			when "010011" => -- xnor
+			when "000111" => -- xnor
 				salida_ALU <= entrada_suma1 xnor entrada_sum2;
-         when "010100" => -- xorcc
+         when "010011" => -- xorcc
 				salida_ALU <= entrada_suma1 xor entrada_sum2;				
 				
-			when others => --nop
+			when others => --otras instrucciones
 				salida_ALU <= (others=>'0');
 		end case;
 	end process; 
