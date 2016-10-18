@@ -1,5 +1,5 @@
 ISim log file
-Running: D:\Desktop\procesador 1 final\procesador_aleja\procesador_aleja\test_procesadorfinal_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb D:/Desktop/procesador 1 final/procesador_aleja/procesador_aleja/test_procesadorfinal_isim_beh.wdb 
+Running: D:\Desktop\procesador 1 final alejandra\procesador_aleja\procesador_aleja\test_procesadorfinal_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb D:/Desktop/procesador 1 final alejandra/procesador_aleja/procesador_aleja/test_procesadorfinal_isim_beh.wdb 
 ISim P.20131013 (signature 0x8ef4fb42)
 ----------------------------------------------------------------------
 INFO:Security:61 - The XILINXD_LICENSE_FILE environment variable is not set.
